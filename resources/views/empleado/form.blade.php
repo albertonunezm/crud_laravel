@@ -1,3 +1,4 @@
+    
     <label for="nombre">Nombre</label>
     <input type="text" value="{{ isset($empleado->nombre)?$empleado->nombre:'' }}" name="nombre" id="nombre"> 
     
@@ -18,4 +19,4 @@
     
     <br>
 
-    <input type="submit"> <br>
+    <input type="submit" value="{{ $modo }} datos"> <br>
