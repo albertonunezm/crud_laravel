@@ -1,6 +1,10 @@
-Formulario de creación de empleado
+@extends('layouts.app')
 
-<form action="{{ url('/empleado') }}" method="post">
-@csrf
-@include('empleado.form',['modo'=>'Crear'])
-</form>
+@section('content')
+<div class="container">
+    <form action="{{ url('/empleado') }}" method="post">
+    @csrf
+    @include('empleado.form',['modo'=>'Crear'])
+    </form>
+</div>
+@endsection
